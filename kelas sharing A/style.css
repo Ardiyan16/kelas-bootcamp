@@ -1,0 +1,140 @@
+:root {
+  --warna-utama: #dc2f02;
+  --teks-putih: #fff;
+  --teks-kuning: #ffba08;
+}
+
+body {
+  font-family: "poppins";
+  background-color: #f1f1f1;
+  color: #010101;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1rem;
+  position: fixed;
+  background-color: var(--warna-utama);
+  width: 100%;
+  z-index: 1;
+  opacity: 0.9;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.navbar h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--teks-putih);
+}
+
+.menu-navbar a {
+  margin: 0 0.5rem;
+  color: var(--teks-putih);
+  font-size: 1rem;
+  display: inline-block;
+}
+
+.menu-navbar a:hover {
+  color: var(--teks-kuning);
+}
+
+.menu-navbar a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--teks-kuning);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.menu-navbar a:hover::after {
+  transform: scaleX(1);
+}
+
+.navbar .menu-navbar-mobile a {
+  color: var(--teks-putih);
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  #nav-toggle {
+    display: inline-block;
+  }
+
+  .menu-navbar a {
+    display: block;
+  }
+
+  .menu-navbar .active {
+    right: 0;
+  }
+
+  .navbar .menu-navbar-mobile a:hover {
+    color: var(--teks-kuning);
+  }
+
+  .navbar .menu-navbar-mobile a::after {
+    transform-origin: 0 0;
+  }
+}
+
+.form {
+  display: flex;
+  margin-top: 5rem;
+  padding: 3rem;
+}
+
+.form-button {
+  display: flex;
+  margin-top: 5rem;
+  padding: 3rem;
+}
+
+.form input,
+select {
+  width: 20%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.angka2 {
+  margin-left: 1rem !important;
+}
+
+.operator {
+  margin-left: 1rem !important;
+}
+
+.hasil_perhitungan {
+  margin-left: 1rem !important;
+}
+
+.button {
+  background-color: #04aa6d; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.btn-plus {
+  font-size: 10px;
+}

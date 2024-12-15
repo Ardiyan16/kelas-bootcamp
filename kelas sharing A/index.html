@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- <nav class="navbar">
+      <h1>Webku</h1>
+      <div class="menu-navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="login.html">Portfolio</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="menu-navbar-mobile">
+        <a href="#" id="nav-toggle"><i class="fas fa-bars"></i></a>
+      </div>
+    </nav> -->
+    <div class="form">
+      <input type="number" id="angka1" class="angka1" placeholder="masukkan angka pertama" />
+      <input type="number" id="angka2" class="angka2" placeholder="masukkan angka kedua" />
+      <select id="operator" class="operator">
+        <option selected disabled>--Pilih Operator--</option>
+        <option value="tambah">Penjumlahan</option>
+        <option value="kurang">Pengurangan</option>
+        <option value="perkalian">Perkalian</option>
+        <option value="pembagian">Pembagian</option>
+      </select>
+      <input type="number" id="hasil_perhitungan" class="hasil_perhitungan" readonly />
+      <br>
+      <!-- <button class="button" id="btn_tambah">Jumlahkan</button>
+      <button class="button" id="btn-kurang">Kurangi</button>
+      <button class="button" id="btn-perkalian">Kalikan</button>
+      <button class="button" id="btn-pembagian">Bagi</button> -->
+    </div>
+    <div class="form-button">
+      <button class="hide-form">Hilangkan Form</button>
+      <button class="show-form">Tampilkan Form</button>
+      <!-- <input type="text" id="search" class="search" placeholder="Masukkan Kata Kunci" /> -->
+    </div>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="app.js"></script>
+  <!-- <script src="script.js"></script> -->
+</html>

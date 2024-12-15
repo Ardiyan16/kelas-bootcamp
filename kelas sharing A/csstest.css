@@ -1,0 +1,23 @@
+img {
+    width: 600px !important;
+    height: 400px !important;
+  }
+  
+  .title {
+    font-size: 25px;
+    font-weight: 600;
+  }
+  
+  #card {
+    background-color: lightgrey;
+    display: inline-flex;
+    width: 150px;
+    height: 150px;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 20px;
+  }
+  
+  /* #desc {
+  
+  } */
