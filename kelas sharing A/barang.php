@@ -1,6 +1,8 @@
 <?php
     include 'db_connect.php';
 
+    // var_dump('cccc');
+
     $query = "SELECT * FROM barang ORDER BY id desc";
     $result = mysqli_query($mysqli ,$query);
     $data = $result->fetch_all(MYSQLI_ASSOC);
